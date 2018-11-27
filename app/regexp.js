@@ -75,6 +75,8 @@ console.log(typeof pattern4.toString());
 console.log('>>> 多行匹配..');
 var text2 = 'abc\n' + 'abc';
 var pattern5 = /^a/g;
+// m标志用于指定多行输入字符串应该被视为多个行。如果使用m标志，
+// ^和$匹配的开始或结束输入字符串中的每一行，而不是整个字符串的开始或结束。
 var pattern6 = /^a/mg;
 var pattern7 = /a/g;
 //不设置多行时，处理为单行行为
